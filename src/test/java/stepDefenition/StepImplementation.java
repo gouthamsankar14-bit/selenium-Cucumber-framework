@@ -43,8 +43,10 @@ public class StepImplementation extends DriverSetUp {
 	}
 
 	@Then("Verify {string} is displayed after placing the order")
-	public void placeOrder(io.cucumber.java.Scenario scenario, String string) {
-		pay.orderConfirm(string);
+	public void placeOrder(String expectedMsg) {
+	    pay.orderConfirm(expectedMsg);
 	}
+
+
 
 }

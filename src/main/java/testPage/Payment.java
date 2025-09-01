@@ -4,6 +4,7 @@
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import reuse.Abstract;
 	
@@ -28,15 +29,22 @@ import reuse.Abstract;
 	
 		
 	
-		public void orderConfirm(String text) {
-			waitForElementToDisplay(confirmText);
-			if (confirmText.getText().trim().equals(text)) {
-				System.out.println("Item Name: "+itemName.getText().trim());
-				System.out.println("Item Qty: "+ItemQty.getText().trim());
-				System.out.println("Item Price: "+price.getText().trim());
-				System.out.println("Order Placed sccessfully");			
-			}
-	
+		public void orderConfirm(String expectedMsg) {
+		    waitForElementToDisplay(confirmText);
+		    waitForElementToDisplay(confirmText);
+		    String actualMsg = confirmText.getText().trim();
+		    if (actualMsg.equalsIgnoreCase(expectedMsg)) {
+		        System.out.println("Item Name: " + itemName.getText().trim());
+		        System.out.println("Item Qty: " + ItemQty.getText().trim());
+		        System.out.println("Item Price: " + price.getText().trim());
+		        System.out.println("Order Placed successfully ✅");
+		    } else {
+		        System.out.println("❌ Order confirmation message mismatch!");
+		        System.out.println("Expected: " + expectedMsg);
+		        System.out.println("Actual:   " + actualMsg);
+		        Assert.fail("Order confirmation message did not match!");
+		    }
 		}
+
 	
 	}
