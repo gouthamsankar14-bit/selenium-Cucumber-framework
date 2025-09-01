@@ -9,7 +9,7 @@ public class Hooks extends DriverSetUp {
 
 	@Before
 	public void beforeScenario(Scenario scenario) throws Exception {
-	    htmlreport();       // report setup
+	    htmlreport(scenario.getName());      // report setup
 	    setUp();       // launch browser per scenario
 	}
 

@@ -10,8 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import reuse.Abstract;
 
-public class CartToSubmit extends Abstract  {
-	
+public class CartToSubmit extends Abstract {
+
 	WebDriver driver;
 
 	public CartToSubmit(WebDriver driver) {
@@ -19,29 +19,33 @@ public class CartToSubmit extends Abstract  {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy(css = "div[class='cartSection']") WebElement cartSection;
-	@FindBy(css = "div[class='cartSection'] h3") WebElement name;
-	@FindBy(css = ".btn-primary") List<WebElement> options;
+
+	@FindBy(css = "div[class='cartSection']")
+	WebElement cartSection;
+	@FindBy(css = "div[class='cartSection'] h3")
+	WebElement name;
+	@FindBy(css = ".btn-primary")
+	List<WebElement> options;
 	@FindBy(xpath = "(//input[@class='input txt text-validated'])[2]")
 	WebElement country;
 	@FindBy(css = ".action__submit")
 	WebElement placeOrder;
 	@FindBy(xpath = "(//span[@class='ng-star-inserted'])[2]")
 	WebElement india;
-	
-	public void submit(String itemname,String Buttonname ) {
+
+	public void submit(String itemname, String Buttonname) {
 		waitForElementToDisplay(cartSection);
-		if(name.getText().trim().equalsIgnoreCase((itemname))){
-			for(WebElement button:options ) {
-				if(button.getText().trim().contains(Buttonname)) {
+		if (name.getText().trim().equalsIgnoreCase((itemname))) {
+			for (WebElement button : options) {
+				if (button.getText().trim().contains(Buttonname)) {
 					button.click();
 					break;
 				}
 			}
 		}
 	}
-	public void sumbitOrder() {
+
+	public Payment sumbitOrder() {
 		waitForElementToDisplay(country);
 		scrollToElement(country);
 		country.sendKeys("india");
@@ -51,6 +55,8 @@ public class CartToSubmit extends Abstract  {
 		waitForElementToDisplay(placeOrder);
 		scrollToElement(placeOrder);
 		placeOrder.click();
+		Payment pay  = new Payment(driver);
+		return pay;
 
 	}
 

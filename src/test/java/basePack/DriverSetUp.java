@@ -23,12 +23,12 @@ public class DriverSetUp {
 		return driver.get();
 	}
 
-	public void htmlreport() {
-		String classname = this.getClass().getSimpleName();
-		extent = ExtendReport.getInstnce(classname);
-		ExtentTest test = extent.createTest("Test- " + classname);
-		ExtentTestManager.setTest(test);
+	public void htmlreport(String scenarioName) {
+	    extent = ExtendReport.getInstnce(scenarioName);   // pass scenario name
+	    ExtentTest test = extent.createTest("Test - " + scenarioName);
+	    ExtentTestManager.setTest(test);
 	}
+
 
 	public void setUp() throws IOException {
 		FileInputStream file = new FileInputStream(filePath);
