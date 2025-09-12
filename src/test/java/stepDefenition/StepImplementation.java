@@ -5,7 +5,6 @@ import java.io.IOException;
 import basePack.DriverSetUp;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import testPage.AddProduct;
 import testPage.CartToSubmit;
@@ -24,29 +23,27 @@ public class StepImplementation extends DriverSetUp {
 	public void login_using_username_and_password(String username, String password) throws IOException {
 		Loginpage login = new Loginpage(getdriver());
 		login.logIn(username, password);
-		System.out.println("Login successful ✅");
+		System.out.println("Login successful ");
 	}
 
 	@When("add product {string} to card")
-	public void add_product_to_card(String product) throws InterruptedException {
+	public void add_product_to_card(String product) throws InterruptedException, IOException {
 		AddProduct add = new AddProduct(getdriver());
 		add.itemTocart(product);
-		System.out.println("Product added ✅");
+		System.out.println("Product added");
 	}
 
 	@And("checkout {string} and submit order")
-	public void checkout_and_submit_order(String itemname) {
+	public void checkout_and_submit_order(String itemname) throws IOException {
 		CartToSubmit cart = new CartToSubmit(getdriver());
 		cart.submit(itemname, "Checkout");
-		pay = cart.sumbitOrder();
-		System.out.println("Checkout completed ✅");
+		cart.sumbitOrder();
+		cart.orderConfirm(itemname);
+		System.out.println("Checkout completed ");
 	}
 
-	@Then("Verify {string} is displayed after placing the order")
+	/*@Then("Verify {string} is displayed after placing the order")
 	public void placeOrder(String expectedMsg) {
 	    pay.orderConfirm(expectedMsg);
-	}
-
-
-
+	}*/    
 }

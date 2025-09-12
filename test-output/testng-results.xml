@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-01T18:42:03 IST" name="Default suite" finished-at="2025-09-01T18:42:16 IST" duration-ms="12531">
+  <suite started-at="2025-09-02T10:37:44 IST" name="Default suite" finished-at="2025-09-02T10:38:00 IST" duration-ms="16525">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGRunner@3646a422]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGRunner@5ab956d7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-01T18:42:03 IST" name="Default test" finished-at="2025-09-01T18:42:16 IST" duration-ms="12531">
+    <test started-at="2025-09-02T10:37:44 IST" name="Default test" finished-at="2025-09-02T10:38:00 IST" duration-ms="16525">
       <class name="cucumber.TestNGRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGRunner@3646a422]" started-at="2025-09-01T18:42:03 IST" name="setUpClass" finished-at="2025-09-01T18:42:05 IST" duration-ms="1528" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGRunner@5ab956d7]" started-at="2025-09-02T10:37:44 IST" name="setUpClass" finished-at="2025-09-02T10:37:45 IST" duration-ms="1335" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@64518270]]>
+                <![CDATA[org.testng.TestRunner@615efd1c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGRunner@3646a422]" started-at="2025-09-01T18:42:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-01T18:42:15 IST" duration-ms="10835" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGRunner@5ab956d7]" started-at="2025-09-02T10:37:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-02T10:38:00 IST" duration-ms="15054" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,28 +34,28 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
+              <![CDATA[element click intercepted: Element <a _ngcontent-fnw-c35="" class="btnn action__submit ng-star-inserted">...</a> is not clickable at point (1060, 566). Other element would receive the click: <div _ngcontent-fnw-c32="" class="ta-backdrop"></div>
   (Session info: chrome=139.0.7258.139)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a423cc05583b7ab87d8c6835f91b5d7b, executeScript {args=[{element-6066-11e4-a52e-4f735466cecf=f.B3D6FF1F275003912B75D9506AA5D699.d.99F611EED09D11AE4FABA1C3A83FE57C.e.17}], script=arguments[0].scrollIntoView(true)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KGOUTH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50426/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a423cc05583b7ab87d8c6835f91b5d7b]]>
+Command: [26abe562d222659b04b501238c5dab01, clickElement {id=f.D1D58EBB12FD9BB4253E8119EB5E1D1C.d.18684837FBAC5C636A1A3C9ECDC7DB54.e.122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KGOUTH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54336/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (26abe562d222659b04b501238c5dab01)] -> css selector: .action__submit]
+Session ID: 26abe562d222659b04b501238c5dab01]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-fnw-c35="" class="btnn action__submit ng-star-inserted">...</a> is not clickable at point (1060, 566). Other element would receive the click: <div _ngcontent-fnw-c32="" class="ta-backdrop"></div>
   (Session info: chrome=139.0.7258.139)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a423cc05583b7ab87d8c6835f91b5d7b, executeScript {args=[{element-6066-11e4-a52e-4f735466cecf=f.B3D6FF1F275003912B75D9506AA5D699.d.99F611EED09D11AE4FABA1C3A83FE57C.e.17}], script=arguments[0].scrollIntoView(true)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KGOUTH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50426/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a423cc05583b7ab87d8c6835f91b5d7b
+Command: [26abe562d222659b04b501238c5dab01, clickElement {id=f.D1D58EBB12FD9BB4253E8119EB5E1D1C.d.18684837FBAC5C636A1A3C9ECDC7DB54.e.122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KGOUTH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54336/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (26abe562d222659b04b501238c5dab01)] -> css selector: .action__submit]
+Session ID: 26abe562d222659b04b501238c5dab01
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -68,18 +68,24 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
-at reuse.Abstract.scrollToElement(Abstract.java:46)
-at testPage.Loginpage.logIn(Loginpage.java:43)
-at stepDefenition.StepImplementation.login_using_username_and_password(StepImplementation.java:26)
-at ✽.login using "goutham@gmail.com" and "Goutham@6"(file:///C:/Users/kgouthamsankar/eclipse-workspace/cucmber_login/src/test/resources/OrderItem.feature:7)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+at testPage.CartToSubmit.sumbitOrder(CartToSubmit.java:63)
+at stepDefenition.StepImplementation.checkout_and_submit_order(StepImplementation.java:41)
+at ✽.checkout "ZARA COAT 3" and submit order(file:///C:/Users/kgouthamsankar/eclipse-workspace/cucmber_login/src/test/resources/OrderItem.feature:9)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGRunner@3646a422]" started-at="2025-09-01T18:42:15 IST" name="tearDownClass" finished-at="2025-09-01T18:42:16 IST" duration-ms="80" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGRunner@5ab956d7]" started-at="2025-09-02T10:38:00 IST" name="tearDownClass" finished-at="2025-09-02T10:38:00 IST" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

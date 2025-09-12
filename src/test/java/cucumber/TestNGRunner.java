@@ -10,5 +10,6 @@ import io.cucumber.testng.CucumberOptions;
     plugin = {"pretty","html:target/cucumber.html"}
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests {
+	
 }
 

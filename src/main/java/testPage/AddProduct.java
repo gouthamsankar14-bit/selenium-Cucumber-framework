@@ -1,5 +1,6 @@
 package testPage;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import reuse.Abstract;
+import reuse.Reportlogger;
 
 public class AddProduct extends Abstract {
 	WebDriver driver;
@@ -32,10 +34,11 @@ public class AddProduct extends Abstract {
 	@FindBy(css = ".mt-1 p")
 	WebElement page;
 
-	public void itemTocart(String itemname) throws InterruptedException {
+	public void itemTocart(String itemname) throws InterruptedException, IOException {
 		waitForAllElementToDisplay(product);
 		for (WebElement item : product) {
 			if (item.getText().trim().contains(itemname)) {
+				Reportlogger.logScreenShot(driver, "Item displayed");
 				driver.findElement(By.cssSelector(".w-10")).click();
 				break;
 
@@ -47,6 +50,7 @@ public class AddProduct extends Abstract {
 		for (WebElement btn : cartButtons) {
 			if (btn.getText().trim().contains("Cart")) {
 				scrollToElement(btn);
+				
 				waitForElementToClicable(btn);
 				btn.click();
 				break;

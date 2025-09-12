@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\kgouthamsankar\AppData\Local\Temp\testng-eclipse--923898302\testng-customsuite.xml</span>
+                    <span>C:\Users\kgouthamsankar\AppData\Local\Temp\testng-eclipse--186212353\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -131,15 +131,15 @@
                   </a> <!-- runScenario("", "order an item in a ecomers site") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("", "order an item in a ecomers site")</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a _ngcontent-fnw-c35=&quot;&quot; class=&quot;btnn action__submit ng-star-inserted&quot;&gt;...&lt;/a&gt; is not clickable at point (1060, 566). Other element would receive the click: &lt;div _ngcontent-fnw-c32=&quot;&quot; class=&quot;ta-backdrop&quot;&gt;&lt;/div&gt;
   (Session info: chrome=139.0.7258.139)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a423cc05583b7ab87d8c6835f91b5d7b, executeScript {args=[{element-6066-11e4-a52e-4f735466cecf=f.B3D6FF1F275003912B75D9506AA5D699.d.99F611EED09D11AE4FABA1C3A83FE57C.e.17}], script=arguments[0].scrollIntoView(true)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KGOUTH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50426}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50426/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a423cc05583b7ab87d8c6835f91b5d7b
+Command: [26abe562d222659b04b501238c5dab01, clickElement {id=f.D1D58EBB12FD9BB4253E8119EB5E1D1C.d.18684837FBAC5C636A1A3C9ECDC7DB54.e.122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\KGOUTH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54336/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (26abe562d222659b04b501238c5dab01)] -&gt; css selector: .action__submit]
+Session ID: 26abe562d222659b04b501238c5dab01
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -152,11 +152,17 @@ Session ID: a423cc05583b7ab87d8c6835f91b5d7b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
-	at reuse.Abstract.scrollToElement(Abstract.java:46)
-	at testPage.Loginpage.logIn(Loginpage.java:43)
-	at stepDefenition.StepImplementation.login_using_username_and_password(StepImplementation.java:26)
-	at ✽.login using &quot;goutham@gmail.com&quot; and &quot;Goutham@6&quot;(file:///C:/Users/kgouthamsankar/eclipse-workspace/cucmber_login/src/test/resources/OrderItem.feature:7)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at testPage.CartToSubmit.sumbitOrder(CartToSubmit.java:63)
+	at stepDefenition.StepImplementation.checkout_and_submit_order(StepImplementation.java:41)
+	at ✽.checkout &quot;ZARA COAT 3&quot; and submit order(file:///C:/Users/kgouthamsankar/eclipse-workspace/cucmber_login/src/test/resources/OrderItem.feature:9)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -168,7 +174,7 @@ Session ID: a423cc05583b7ab87d8c6835f91b5d7b
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kgouthamsankar\AppData\Local\Temp\testng-eclipse--923898302\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\kgouthamsankar\AppData\Local\Temp\testng-eclipse--186212353\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -229,12 +235,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'cucumber.TestNGRunner')
-data.setCell(0, 3, 10835);
+data.setCell(0, 3, 15054);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -262,18 +268,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">cucumber.TestNGRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@64518270)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@615efd1c)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("", "order an item in a ecomers site")</span>
-                <span class="method-start">1552 ms</span>
+                <span class="method-start">1354 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">12416 ms</span>
+                <span class="method-start">16417 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
